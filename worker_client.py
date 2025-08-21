@@ -9,8 +9,8 @@ import platform
 import subprocess
 from pathlib import Path
 
-HUB_HOST = os.getenv("HUB_HOST", "xxx.payit.gg")   # Đổi thành domain/IP payit.gg của Codespace
-HUB_PORT = int(os.getenv("HUB_PORT", "4444"))      # Port public của payit.gg
+HUB_HOST = os.getenv("HUB_HOST", "147.185.221.31")   # Đổi thành domain/IP payit.gg của Codespace
+HUB_PORT = int(os.getenv("HUB_PORT", "17852"))      # Port public của payit.gg
 AUTH_TOKEN = os.getenv("HUB_TOKEN", "CHANGE_ME")   # Phải khớp với hub
 
 WORKER_NAME = os.getenv("WORKER_NAME", platform.node())
@@ -159,3 +159,4 @@ def connect_and_run():
 
 if __name__ == "__main__":
     connect_and_run()
+
